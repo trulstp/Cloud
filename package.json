@@ -19,7 +19,6 @@
     "heroku-prebuild": "npm install --prefix server && npm install",
     "start": "node registrationbackend/server.js",
     "run start": "react-scripts start",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
