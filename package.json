@@ -19,7 +19,6 @@
   "scripts": {
     "start": "react-scripts start",
     "run start": "node registrationbackend/server.js",
-    "heroku-prebuild": "npm install --prefix server && npm install",
     "heroku-postbuild": "npm run build --prefix server && ng build --prod",
     "build": "react-scripts build",
     "test": "react-scripts test",
