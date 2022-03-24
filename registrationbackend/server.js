@@ -10,7 +10,7 @@ const path = require('path')
 dotenv.config()
 
 mongoose.connect(process.env.DATABASE_ACCESS, () =>console.log("Database connected"))
-app.use(express.static(path.resolve(__dirname, "./src/index.js")));
+app.use(express.static(path.resolve(__dirname, "../src/index.js")));
 app.use(express.json())
 app.use(cors())
 app.use('/app', routesUrls)
