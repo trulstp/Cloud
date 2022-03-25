@@ -64,7 +64,7 @@ class App extends Component {
     
     getStudents() {
         document.getElementById('studentlist').innerHTML = '';
-        axios.get('http://localhost:4000/app/students')
+        axios.get('https://afternoon-peak-35116.herokuapp.com/app/students')
             .then((response) => {
                 const data = response.data;
                 console.log('Data found!!! :D')
@@ -96,7 +96,7 @@ class App extends Component {
             degreeProgram: this.state.degreeProgram
         }
 
-        axios.post('http://localhost:4000/app/register', registered)
+        axios.post('https://afternoon-peak-35116.herokuapp.com/app/register', registered)
             .then(response => console.log(response.data))
 
             this.setState({
