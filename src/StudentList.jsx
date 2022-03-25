@@ -57,7 +57,7 @@ class StudentList extends Component{
     
             console.log(deleteStudent)
     
-            axios.delete(`https://afternoon-peak-35116.herokuapp.com/${deleteStudent}`)
+            axios.delete(`https://afternoon-peak-35116.herokuapp.com/delete/${deleteStudent}`)
                 .then(response => console.log(response.data))
             
             this.setState({
