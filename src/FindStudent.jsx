@@ -40,7 +40,7 @@ class FindStudent extends Component{
         
         foundStudent = Number(foundStudent.studentID)
 
-        axios.get(`https://afternoon-peak-35116.herokuapp.com/${foundStudent}`)
+        axios.get(`https://afternoon-peak-35116.herokuapp.com/app/find/${foundStudent}`)
         .then((response) => {
             const data = response.data;
 
